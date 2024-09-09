@@ -48,7 +48,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <div className="sidebar">
+      <div className="sidebar">  
         <FriendList onFormBill={handleSelectedFriend} friends={friends} onSelectedFriend={selectedFriend} />
         {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} onShowFriend={handleAddFriend} />}
         <Button onClick={() => setShowAddFriend(!showAddFriend)} >{showAddFriend ? 'Close' : 'Add Friend'}</Button>
